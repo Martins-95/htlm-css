@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhar com links</title>
+</head>
+<body>
+    <h1>Usar links externos</h1>
+    <p>Tu podes aceder ao meu <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/09%20-%20Listas%20HTML.pdf" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Também pode aceder ao meu <a href="https://youtube.com/cursoemvideo/">canal gratuito do youtube</a></p>
+    <!--A tag <a> significa anchor o nome href="URL" significa Hypertext reference, que é para onde o link irá encaminhar-->
+    <!--o nome target="_blank" significa alvo, e o valor "_blank" significa janela em braco. O nome rel="" significa relativo a... e o valor "external" significa que é um link do tipo externo, ou seja eu quero que ele abra uma nova janela fora do meu site. Resumindo estes dois atributos combinados, significam que este é um link do tipo externo com um alvo do tipo _blank que é uma janela em branco. O atributo rel="external" é recomendável -->
+    <h1>Usar links internos</h1><!--Vai fazer uma ligação com outra página dentro do nosso site-->
+    <p>Esta é a primeira página do site se quiser pode aceder à minha <a href="pag002.html" rel="next" target="_self"> segunda página</a>
+    <!--Para funcionar, a página 002 tem de estar na mesma pásta do index-->
+    <!--o atributo rel="next" vai informar o motor de busca, que a próxima página é a seguinte, e existe uma arquitetura de navegação-->
+    <p>Tamém pode aceder à minha página de <a href="Notícias/pag003.html" rel="next" target="_self">notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf">Descarregar Livro em PDF</a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.zip" download="Livro/10 - Ligações em toda parte.zip" type="application/zip">Livro compactado em ZIP </a></li>
+    </ul>
+</body>
+</html>

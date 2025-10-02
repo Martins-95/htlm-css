@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture><!--A sequência tem de ser exatamente assim: 1-grande 2-média 3-pequena. mudar "media="" para "(max-widhth: )"". considerar a folga da barra de deslocamento, aprox 50px + os px da imagem. OS px das imagens são: pequena-300px; média-700px; grande-1000px.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+        <img src="imagens/foto-g.png" alt="Imagem fléxivel">
+    </picture>
+    <h1>Reproduzir áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>  
+        <source src="media/onemoretime.mp3" type="audio/mpeg">
+        <source src="media/onemoretime.ogg" type="audio/ogg">
+        <source src="media/onemoretime.wav" type="audio/wav">
+    </audio>
+    <p>Não consegue reproduzir o áudio. Clique aqui para <a href="media/onemoretime.mp3" target="_blank">descarregar o arquivo</a>.</p>
+    <!--O browser vai tentar reproduzir a midia na ordem de cima para baixo, té conseguir, se não conseguir nenhuma é criado um link para descarregar o áudio. existem também os atributos preload; autoplay; controls; loop. Cada um com a sua função.-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video controls width="500" height="315"><!--A tag <poster> adiciona uma imagem quando o video estiver parado.-->
+        <source src="Media/14178952_960_540_25fps.mp4" type="video/mp4">
+        <!--<source src="Media/video-URL.m4v" type="video/m4v"-->
+        <!--<source src="Media/video-URL.webm" type="video/webm"-->
+        <!--<source src="Media/video-URL.ogv" type="video/ogv"-->
+        <!--O browser vai escolher o formato de vídeo compatível, na ordem de cima para baixo-->
+    </video>
+    <h1>Inserir videos do YouTube</h1><!--Ao compartilhar um video do youtube, ele gera um código iframe para inserir no HTML. Como mostra em baixo.-->
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=vwPNOaUvtd6uTdOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

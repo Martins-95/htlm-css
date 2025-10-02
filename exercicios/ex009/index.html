@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1"><!-- A tag <ol> significa ordered list. Cria listas ordenadas por numero crescente. O parâmetro type= permite ordenar a lista por: "1" - Números; "a" - Letras minusculas; "A" - Letras maiusculas; "I" - Numeração romana maiuscula; "i" - Numeração romana minuscula.-->
+        <li>Acordar<!--A tag <li> fica nested na <ol> li significa list item, pode o não ter encerramento das tag's-->
+        <li>Ligar para o João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="disc"><!--Na tag <ul> que significa unordered list, o tipo pode ser:"disc";"circle" ou "square"-->
+       <li>Pão</li>
+       <li>Leite</li>
+       <li>Tomate</li>
+       <li>Manteiga</li>
+       <li>Arroz</li>
+       <li>Feijão</li>
+    </ul>
+    <h2>As minhas linguas favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--O atributo start="5", faz com que a lista inicie na letra "e", porque não meto "e" no start=? porque o programa só conhece valores alfanumericos -->
+            <li>PHP</li>
+            <li>Phython</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Os meus jogos favoritos</h2><!--É possível fazer nesting de várias ul ou ol, como podemos ver no exemplo a baixo.-->
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>Playstation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição</h2><!--<dl> significa "definition list" <dt> significa "definition term" <dd> significa "definition description".
+    Este tipo de listas é util quando o google quer pesquisar algum termo-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>
